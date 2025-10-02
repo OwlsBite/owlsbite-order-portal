@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Menu Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Our Restaurant!</h1>
+    <div id="menu">
+        <h2>Menu</h2>
+        <div class="menu-item" data-name="Pizza" data-price="250">
+            <span class="item-name">Pizza</span> - ₹250
+            <input type="number" min="0" value="0" class="item-qty">
+        </div>
+        <div class="menu-item" data-name="Burger" data-price="120">
+            <span class="item-name">Burger</span> - ₹120
+            <input type="number" min="0" value="0" class="item-qty">
+        </div>
+        <div class="menu-item" data-name="Pasta" data-price="180">
+            <span class="item-name">Pasta</span> - ₹180
+            <input type="number" min="0" value="0" class="item-qty">
+        </div>
+        <!-- Add more items as needed -->
+    </div>
+    <h2>Your Details</h2>
+    <form id="order-form">
+        <label>
+            Name:
+            <input type="text" id="customer-name" required>
+        </label><br>
+        <label>
+            Delivery Address:
+            <input type="text" id="customer-address" required>
+        </label><br>
+        <button type="button" id="place-order">Place Order on WhatsApp</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
